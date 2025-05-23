@@ -12,7 +12,7 @@ docker build -t pdflatex .
 Add this to your .zhsrc or .bashrc
 
 ```
-alias pdflatex='docker run -it --rm -v "${PWD}:/root/shared/folder" --name pdflatex pdflatex'
+alias pdflatex='docker run -it --rm -v "${PWD}:/home/appuser/workdir" --name pdflatex pdflatex'
 ```
 
 Reload your terminal or type ```source ~/.zshrc``` if using zsh or
